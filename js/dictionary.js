@@ -11,7 +11,7 @@ var dict = {
         hn: "परमेश्वर का तस्कर",
         bn: "God's Smuggler in Bengali",
         en: "God's Smuggler in English",
-        mr: "देवाचा चोर",
+        mr: "देवाचा दंडगोल",
         gu: "God's Smuggler in Gujarati",
         pa: "God's Smuggler in Punjabi",
         or: "God's Smuggler in Odia"
