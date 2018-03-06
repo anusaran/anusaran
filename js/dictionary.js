@@ -1,14 +1,14 @@
 var dict = {
     "Anusaran": {
         en: "Anusaran",
-        hn: "निमंत्रण",
-        mr: "निमंत्रण"
+        hn: "अनुसरण",
+        mr: "अनुसरण"
     },
     "English Books": {
         hn: "Hindi Books",
     },
     "God's Smuggler": {
-        hn: "भगवान का तस्कर",
+        hn: "परमेश्वर का तस्कर",
         bn: "God's Smuggler in Bengali",
         en: "God's Smuggler in English",
         mr: "देवाचा चोर",
