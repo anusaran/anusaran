@@ -2,17 +2,141 @@
 <html>
 <head>
 	<title>Anusaran</title>
-	<style>
-		h1 {
-			text-align: center;
-		}
-	</style>
+
+	<link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 
+<header>
+	<nav>
+		<div class="row">
+		<h1 class="trn">Anusaran</h1>
+		<a class="trn" href="/">Books</a>
+		<a class="trn" href="/about/">About</a>
+		<a class="trn" href="/contact/">Contact</a>
+			<select id="language-select">
+				<option value="">-- Select Language --</option>
+				<option value="en">English</option>
+				<option value="bn">Bengali</option>
+				<option value="hn">Hindi</option>
+				<option value="mr">मराठी</option>
+				<option value="gu">Gujarati</option>
+				<option value="pa">Punjabi</option>
+			</select>
+			<input type="search" class="filter" />
+		</div>
+	</nav>
+</header>
+
 	<main>
 
-		<h1>Anusaran</h1>
+		<h4 class="trn section-title">English Books</h4>
+
+		<!-- BOOK -->
+		<!-- https://archive.org/download/gu-gods-smuggler/gu-gods-smuggler.pdf -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="gods-smuggler">
+				<img class="book-cover" />
+				<span class="trn">God's Smuggler</span>
+			</a>
+			<article id="gods-smuggler" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">God's Smuggler</h3>
+				<p class="trn">gods-smuggler-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
+
+		<!-- BOOK -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="faith-that-endures">
+				<img class="book-cover" />
+				<span class="trn">Faith that Endures</span>
+			</a>
+			<article id="faith-that-endures" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">Faith that Endures</h3>
+				<p class="trn">faith-that-endures-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
+
+		<!-- BOOK -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="pastors-manual">
+				<img class="book-cover" />
+				<span class="trn">Pastor's Manual</span>
+			</a>
+			<article id="pastors-manual" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">Pastor's Manual</h3>
+				<p class="trn">pastors-manual-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
+
+		<!-- BOOK -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="teacher-module-1">
+				<img class="book-cover" />
+				<span class="trn">Teacher's Module 1</span>
+			</a>
+			<article id="teacher-module-1" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">Teacher's Module 1</h3>
+				<p class="trn">teacher-module-1-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
+
+		<!-- BOOK -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="teacher-module-2">
+				<img class="book-cover" />
+				<span class="trn">Teacher's Module 2</span>
+			</a>
+			<article id="teacher-module-2" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">Teacher's Module 2</h3>
+				<p class="trn">teacher-module-2-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
+
+		<!-- BOOK -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="students-module-1">
+				<img class="book-cover" />
+				<span class="trn">Student's Module 1</span>
+			</a>
+			<article id="students-module-1" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">Student's Module 2</h3>
+				<p class="trn">students-module-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
+
+		<!-- BOOK -->
+		<div class="book">
+			<a class="js-open-modal" href="#" data-modal-id="students-module-2">
+				<img class="book-cover" />
+				<span class="trn">Student's Module 2</span>
+			</a>
+			<article id="students-module-2" data-type="pdf" class="modal-box">
+				<img class="book-cover" />
+				<h3 class="trn">Student's Module 2</h3>
+				<p class="trn">students-module-description</p>
+				<a class="trn book-download button">download</a>
+				<a href="#" class="js-modal-close">X</a>
+			</article>
+		</div>
 
 	</main>
 
@@ -20,6 +144,50 @@
 
 
 	</footer>
+
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/translate.js"></script>
+<script src="/js/dictionary.js"></script>
+<script src="/js/modal.js"></script>
+<script>
+
+    if(window.location.hash) {
+        var languageCode = window.location.hash.substring(1);
+        var translator = $('body').translate({lang: languageCode, t: dict});
+        swapBookTitles();
+    } else {
+        var translator = $('body').translate({lang: "en", t: dict});
+        swapBookTitles();
+	}
+
+
+	function swapBookTitles() {
+		$(".book").each(function() {
+   			var $this = $(this);
+   			var title = $this.children("article").attr("id");
+   			var type = $this.children("article").attr("data-type");
+            var translationExists = dict[$(this).children("article").children("h3").attr("data-trn-key")];
+
+
+  			if(!translationExists[translator.lang()]) {
+	  			$(this).hide();
+  			} else {
+  				$(this).show();
+  				$this.find(".book-download").attr("href", "/resources/" + translator.lang() + "-" + title + "." + type);
+  				$this.find(".book-cover").attr("src", "/img/" + translator.lang() + "-" + title + ".png");
+  			}
+   			
+		});		
+	}
+
+	$( "#language-select" ).change(function() {
+  		translator.lang($(this).val());
+        window.location.hash = $(this).val();
+		swapBookTitles();
+	});
+	
+</script>
 
 </body>
 </html>
