@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+
+Template 2092 Shelf
+
+http://www.tooplate.com/view/2092-shelf
+
+-->
+    <title>Contact Us - Anusaran</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+    <body>
+        
+        <div class="container">
+            <header class="tm-site-header">
+                <h1 class="tm-site-name">Anusaran</h1>
+                <p class="tm-site-description">Your Online Bookstore</p>
+                
+                <nav class="navbar navbar-expand-md tm-main-nav-container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
+                        <ul class="nav nav-fill tm-main-nav-ul">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>    
+                </nav>
+                
+            </header>
+            
+            <div class="tm-main-content">
+                <section class="row tm-margin-b-l">
+                    <div class="col-12">
+                        <h2 class="tm-blue-text tm-margin-b-p">Contact Us</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-md-0 mb-5 tm-overflow-auto">         
+                        <div class="mr-lg-5">
+                            <!-- contact form -->
+                            <form action="#" method="post" class="tm-contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                </div>
+                                <div class="form-group">                                                        
+                                    <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="contact_message" name="contact_message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="tm-btn tm-btn-blue float-right">Submit</button>
+                            </form>                          
+                        </div>                                       
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p class="tm-margin-b-p"more information please contactus.</p>
+                        <address>
+                            <span class="tm-blue-text">Mailing Address</span><br>
+                            New Delhi,<br>
+                            India<br><br>
+                            <div class="tm-blue-text">          
+                                Email: <a class="tm-blue-text" href="mailto:info@company.com">info@anusaran.co.in</a
+                                ><br>
+                                Tel: <a class="tm-blue-text" href="tel:+66100200120">010-020-0120</a><br>
+                                Fax: <a class="tm-blue-text" href="tel:+66900800980">090-080-0980</a><br>    
+                            </div>                            
+                        </address>
+                        
+                    </div>
+                </section>
+
+                <section class="row tm-margin-b-l">
+                    <div class="col-12">
+                        <header>
+                            <h4 class="tm-blue-text tm-margin-b">Our Location</h4>
+                        </header>
+                        <div id="google-map"></div>
+                    </div>
+                </section>
+
+                <section class="media tm-highlight tm-highlight-w-icon">
+
+                    <div class="tm-highlight-icon">
+                        <i class="fa tm-fa-6x fa-book"></i>    
+                    </div>                    
+
+                    <div class="media-body">
+                        <header>
+                            <h2> Revelation 17:8</h2>
+                        </header>
+                        <p class="tm-margin-b">	
+"The beast that you saw was, and is not, and is about to come up out of the abyss and go to destruction And those who dwell on the earth, whose name has not been written in the book of life from the foundation of the world, will wonder when they see the beast, that he was and is not and will come.</p>
+                        
+                    </div>                    
+                </section>
+            </div>
+
+            <footer>
+                Copyright &copy; <span class="tm-current-year">2018</span> BG Arts 
+                
+                - Designed by <a href="http://www.tooplate.com" target="_parent">BG Arts</a>
+            </footer>    
+        </div>
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/popper.min.js"></script>                <!-- Popper (https://popper.js.org/) -->
+        <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap (https://getbootstrap.com/) -->
+        <script>     
+
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(37.769725, -122.462154),
+                    scrollwheel: false
+                };
+            
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+                });
+            
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+                });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+				// use your own API key for Google Maps
+                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC_iLYB-9nzlBfwB18WEDTCMla3Cr97lsg&v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            } 
+       
+            $(document).ready(function(){
+
+                // Google Map
+                loadGoogleMap();  
+                
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());
+
+            });
+
+        </script>             
+
+</body>
+</html>
