@@ -35,16 +35,19 @@
 	<script>
 		sofia.config = $.extend(sofia.config, {
 			siteTitle: 'Anusaran',
-
+			bibleSelectorDefaultList: ['HINOHB','HINERV','ENGESV','ENGKJV',"BENERV","BENOBB","GUJGOV","TELOTB","ORIOOB"],
 			defaultLanguage: 'hi',
 			pinnedLanguage: 'hi',
+			
+		        newBibleWindowVersion: 'HINOHB',
+		        enableBibleSelectorTabs: true,			
 
-    		windows: [
-    		    {type: 'bible',data: {textid: 'HINOHB',fragmentid: 'JN1_1'}},
-    		    {type: 'bible',data: {textid: 'HINERV',fragmentid: 'JN1_1'}}
+    			windows: [
+				{type: 'bible',data: {textid: 'HINOHB',fragmentid: 'JN1_1'}},
+				{type: 'bible',data: {textid: 'HINERV',fragmentid: 'JN1_1'}}
 			],
 			aboutPagePath: 'about.html',
-            gaUrl: 'anusaran.com'
+            		gaUrl: 'anusaran.com'
 		});
 	</script>
 	<style>
